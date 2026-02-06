@@ -20,3 +20,4 @@ The server runs on http://localhost:3000.
 
 - `GET /` — Returns a JSON greeting
 - `GET /health` — Returns server health status
+- `GET /version` — Returns the application version
