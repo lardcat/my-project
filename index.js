@@ -18,6 +18,10 @@ app.get("/version", (req, res) => {
   res.json({ version });
 });
 
+app.get("/time", (req, res) => {
+  res.json({ time: new Date().toISOString() });
+});
+
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
