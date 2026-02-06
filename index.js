@@ -13,6 +13,11 @@ app.get("/health", (req, res) => {
   res.json({ status: "ok" });
 });
 
+app.get("/version", (req, res) => {
+  const { version } = require("./package.json");
+  res.json({ version });
+});
+
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
