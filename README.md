@@ -19,3 +19,4 @@ The server runs on http://localhost:3000.
 ## API
 
 - `GET /` — Returns a JSON greeting
+- `GET /health` — Returns server health status
